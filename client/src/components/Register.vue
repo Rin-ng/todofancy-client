@@ -95,9 +95,11 @@
      ]),
       signUp(){
          let self = this;
+         let inputEmail = this.email;
+         inputEmail = inputEmail.toLowerCase();
          let userData = {
             name: self.name,
-            email: self.email,
+            email: inputEmail,
             password: self.password
          }
 

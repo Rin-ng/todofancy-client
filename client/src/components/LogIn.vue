@@ -79,8 +79,11 @@
      ]),
       submit () {
         let self = this;
+        let inputEmail = this.email;
+        inputEmail = inputEmail.toLowerCase();
+        console.log("input email: ", inputEmail)
          let userData = {
-           email: self.email,
+           email: inputEmail,
            password: self.password
          }
 
